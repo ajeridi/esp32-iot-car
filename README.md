@@ -110,16 +110,6 @@ esp32-iot-car/
 
 ---
 
-## 🚀 Getting Started
-
-1. Install the **Arduino IDE** with the **ESP32 board package (core 3.x)**, which provides the `ledcAttach()` PWM API used here.
-2. Install the libraries: `Blynk`, `PubSubClient`, `Adafruit GFX`, `Adafruit SSD1306`, `NewPing`, `DHT sensor library`.
-3. In both sketches, fill in your Wi-Fi credentials (`ssid`, `password` / `pass`).
-4. In the car sketch, fill in your Blynk template ID and auth token, and create a dashboard with four push buttons on virtual pins `V0` (forward), `V1` (right), `V2` (backward) and `V3` (left).
-5. Upload each sketch to its ESP32.
-
----
-
 ## 🔧 Hardware Iterations
 
 * **Motor driver:** the first driver (L298N) caused a voltage drop of about 2 V, which reduced the motor torque so much that the car could not move. I replaced it with a **TB6612FNG** and increased the supply from 6 V to 9 V.
